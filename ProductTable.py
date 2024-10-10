@@ -39,4 +39,6 @@ Product5 = {
   "Stock" : 100,
   "Supplier Email" : "supplier5@gmail.com"
 }
-print(Product1, Product2, Product3, Product4, Product5)
+Products = [Product1, Product2, Product3, Product4, Product5]
+for Product in Products:
+    print(f"ID: {Product.get('ID')}, Name: {Product.get('Name')}, Category: {Product.get('Category')}, Price: {Product.get('Price')}, Stock: {Product.get('Stock')}, Supplier Email: {Product.get('Supplier Email')}")
